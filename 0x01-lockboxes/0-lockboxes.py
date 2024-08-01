@@ -3,7 +3,7 @@
 
 
 def canUnlockAll(boxes):
-    """determines if all the boxes can be opened"""
+    """Determines if all the boxes can be opened"""
     keys_set = {0}
     keys_set.update(boxes[0])
     keys_in_hand = [] + boxes[0]
