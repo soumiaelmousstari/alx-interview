@@ -36,7 +36,7 @@ try:
                 if (a in status_code.keys()):
                     status_code[a] += 1
             if (b == 10):
-                ft_printf_message(status_code, size_total)
+                ft_print_message(status_code, size_total)
                 b = 0
 finally:
     ft_print_message(status_code, size_total)
