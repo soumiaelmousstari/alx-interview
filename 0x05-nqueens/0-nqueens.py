@@ -23,7 +23,7 @@ def position(N, i=0, a=[], b=[], c=[]):
     if i < N:
         for j in range(N):
             if j not in a and i + j not in b and i - j not in c:
-                yield from queens(N, i + 1, a + [j], b + [i + j], c + [i - j])
+                yield from position(N, i + 1, a + [j], b + [i + j], c + [i - j])
     else:
         yield a
 
